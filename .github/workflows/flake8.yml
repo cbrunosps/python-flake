@@ -1,4 +1,22 @@
-on: [push]
+on: 
+  push:
+
+    paths-ignore:
+      - README.md
+      - CHANGELOG.md
+      - .github/workflows/**
+      - Dependencias_SIA.md
+      - parameters-preprod.json
+      - parameters-production.json
+      - dynamo.py
+      - rollback-dynamo.py
+      - tablas/**
+      - pre-commit-config.yaml
+      - .flake8
+      - pyproject.toml
+      - isort.cfg
+      - .cz.yaml
+      - scripts/**
 
 jobs:
   build:
